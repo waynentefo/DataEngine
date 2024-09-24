@@ -1,0 +1,61 @@
+body {
+
+ 
+  background: url('/static/images/mystic.jpg') no-repeat center center fixed; /* Adjust the path to your image */
+  
+}
+
+
+.form-container {
+  max-width: 500px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input fields and form */
+form input[type="text"], 
+form input[type="password"], 
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2a76c4;
+}
+
+/* Container for the Return to Home button */
+.return-home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for the Return to Home button */
+.return-home-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px; /* Same width as the form container */
+}
+
+.return-home-button:hover {
+  background-color: #0056b3;
+}

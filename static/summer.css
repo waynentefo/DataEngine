@@ -1,0 +1,98 @@
+/* General Reset */
+body, h1, h2, form, input, button, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('/static/images/mystic.jpg') no-repeat center center fixed; /* Adjust the path to your image */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-color: #f4f4f4; /* Fallback color while the image loads */
+}
+
+.container {
+  width: 110%;
+  max-width: 240px; /* Further reduced max-width for the container */
+  text-align: center;
+  padding: 15px; /* Reduced padding for the container */
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 8px; /* Further reduced padding for the form box */
+  border-radius: 6px; /* More reduced border-radius */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease;
+  margin: 0 auto; /* Center the box */
+}
+
+.form-box:hover {
+  transform: scale(1.02); /* Slightly increased scale effect */
+}
+
+.title {
+  font-size: 16px; /* Further reduced font size */
+  color: #333; /* Dark gray color */
+  margin-bottom: 10px; /* Reduced margin for spacing */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px; /* Further reduced padding for better fit */
+  margin: 5px 0; /* Further reduced margin for spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* More reduced border-radius */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 12px; /* Further reduced font size */
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #6c757d; /* Dark gray border color on focus */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 5px; /* Further reduced padding for buttons */
+  background-color: #6c757d; /* Dark gray background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* More reduced border-radius */
+  font-size: 12px; /* Further reduced font size */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a6268; /* Slightly darker gray on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.view-logs, .back-button {
+  display: inline-block;
+  margin-top: 6px; /* Further reduced margin for spacing */
+  padding: 5px; /* Further reduced padding for buttons */
+  background-color: #28a745; /* Green background */
+  color: white;
+  border-radius: 4px; /* More reduced border-radius */
+  text-decoration: none;
+  font-size: 12px; /* Further reduced font size */
+  transition: background-color 0.3s ease;
+}
+
+.view-logs:hover, .back-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

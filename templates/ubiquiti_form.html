@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/destiny.css">
+
+<!-- Container for the form -->
+<div class="form-container">
+    <!-- Main Form for Changing Passwords -->
+    <form method="post" action="/ubiquiti_change/">
+        <label for="ip_address">IP Address / Subnet:</label>
+        <input type="text" id="ip_address" name="ip_address" required><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Current Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="new_pass">New Password:</label>
+        <input type="password" id="new_pass" name="new_pass" required><br>
+
+        <label for="verify_pass">Verify New Password:</label>
+        <input type="password" id="verify_pass" name="verify_pass" required><br>
+
+        <input type="submit" value="Change Password">
+    </form>
+</div>
+
+<!-- Separate Form for Return to Home Button (outside the form container) -->
+<div class="return-home-container">
+    <form action="/" method="get">
+        <button type="submit" class="return-home-button">
+            Return to Home
+        </button>
+    </form>
+</div>

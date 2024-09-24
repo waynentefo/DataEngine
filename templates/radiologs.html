@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/radiologs.css">
+    <title>Radio Logs</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Title at the top, centered -->
+        <h1>Password Change Logs</h1>
+
+        <!-- Logs container -->
+        <div class="logs-container">
+            <pre>{{ logs }}</pre>
+        </div>
+
+        <!-- Buttons centered at the bottom -->
+        <div class="buttons">
+            <!-- Return to Home button -->
+            <form action="/" method="get">
+                <button type="submit" class="btn">Return Home</button>
+            </form>
+
+            <!-- Download logs as Excel button -->
+            <form action="/download_radio_logs" method="get">
+                <button type="submit" class="btn">Download Excel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

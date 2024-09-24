@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Changer</title>
+    <link rel="stylesheet" href="/static/summer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 class="title">Change Password</h1>
+            <form method="post" action="/manual_change">
+                <input type="text" name="ip_address" placeholder="IP Address / Subnet" required>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="text" name="profile_name" placeholder="Profile Name" required>
+                <input type="password" name="new_pass" placeholder="New Password" required>
+                <button type="submit">Change Password</button>
+            </form>
+            <hr>
+            <h2>Upload Excel</h2>
+            <form method="post" enctype="multipart/form-data" action="/upload_change">
+                <input type="file" name="file" accept=".xlsx, .xls" required>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="text" name="profile_name" placeholder="Profile Name" required>
+                <input type="password" name="new_pass" placeholder="New Password" required>
+                <button type="submit">Upload and Change</button>
+            </form>
+        </div>
+        <div class="logs-link">
+            <a href="/logs" class="view-logs">View Logs</a>
+            <div class="return-button">
+        </div>
+    </div>
+</body>
+</html>
+
+
